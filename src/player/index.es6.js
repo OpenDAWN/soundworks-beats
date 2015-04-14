@@ -175,7 +175,7 @@ class BeatsClientPerformance extends clientSide.Performance {
             break;
           case 'frequencyRatio':
             this.view.innerHTML += 'frequency ratio: ' + report[k] +
-              '"<br>';
+              '<br>';
             break;
           case 'connection':
             this.view.innerHTML += 'connection: ';
@@ -191,7 +191,7 @@ class BeatsClientPerformance extends clientSide.Performance {
               report[k].toFixed(0) + '" <br>';
             break;
           case 'connectionTimeOut':
-            this.view.innerHTML += 'connection time out: ' +
+            this.view.innerHTML += 'connection time-out: ' +
               report[k].toFixed(1).replace('.', '"') + '<br>';
             break;
           case 'travelDuration':

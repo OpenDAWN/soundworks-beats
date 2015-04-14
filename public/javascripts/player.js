@@ -1697,8 +1697,8 @@ module.exports = ClientSync;
 "use strict";var PRS$0 = (function(o,t){o["__proto__"]={"a":t};return o["a"]===t})({},{});var DP$0 = Object.defineProperty;var GOPD$0 = Object.getOwnPropertyDescriptor;var MIXIN$0 = function(t,s){for(var p in s){if(s.hasOwnProperty(p)){DP$0(t,p,GOPD$0(s,p));}}return t};var SP$0 = Object.setPrototypeOf||function(o,p){if(PRS$0){o["__proto__"]=p;}else {DP$0(o,"__proto__",{"value":p,"configurable":true,"enumerable":false,"writable":true});}return o};var OC$0 = Object.create;var SLICE$0 = Array.prototype.slice;var S_ITER$0 = typeof Symbol!=='undefined'&&Symbol&&Symbol.iterator||'@@iterator';var S_MARK$0 = typeof Symbol!=='undefined'&&Symbol&&Symbol["__setObjectSetter__"];function GET_ITER$0(v){if(v){if(Array.isArray(v))return 0;var f;if(S_MARK$0)S_MARK$0(v);if(typeof v==='object'&&typeof (f=v[S_ITER$0])==='function'){if(S_MARK$0)S_MARK$0(void 0);return f.call(v);}if(S_MARK$0)S_MARK$0(void 0);if((v+'')==='[object Generator]')return v;}throw new Error(v+' is not iterable')};
 
 var client = {
-  tyoe: null,
-  index: 0,
+  type: null,
+  index: -1,
   coordinates: null,
   init: init,
   start: start,
@@ -16282,7 +16282,7 @@ var BeatsClientPerformance = (function(super$0){super$0=clientSide.Performance;i
             break;
           case 'frequencyRatio':
             this$0.view.innerHTML += 'frequency ratio: ' + report[k] +
-              '"<br>';
+              '<br>';
             break;
           case 'connection':
             this$0.view.innerHTML += 'connection: ';
@@ -16298,7 +16298,7 @@ var BeatsClientPerformance = (function(super$0){super$0=clientSide.Performance;i
               report[k].toFixed(0) + '" <br>';
             break;
           case 'connectionTimeOut':
-            this$0.view.innerHTML += 'connection time out: ' +
+            this$0.view.innerHTML += 'connection time-out: ' +
               report[k].toFixed(1).replace('.', '"') + '<br>';
             break;
           case 'travelDuration':
